@@ -1,0 +1,38 @@
+
+set(srcs            main.cpp app_webcam_cpp)
+
+set(src_dirs        .)
+
+set(include_dirs    .
+                    # ../components/esp-dl/include
+                    # ../components/esp-dl/include/tool
+                    # ../components/esp-dl/include/nn
+                    # ../components/esp-dl/include/layer
+                    # ../components/esp-dl/include/image
+                    # ../components/esp-dl/include/typedef
+                    # ../components/esp-dl/include/detect
+                    # ../components/esp-dl/include/model_zoo
+                    
+                    )
+
+set(requires        esp_wifi esp_event esp_netif esp_http_server esp_http_client nvs_flash esp_psram esp-dl esp_timer)
+
+idf_component_register(SRCS ${srcs} SRC_DIRS ${src_dirs} INCLUDE_DIRS ${include_dirs} REQUIRES ${requires}) #  SRC_DIRS ${src_dirs} 
+
+
+
+
+set(lib     libhuman_face_detect.a
+            libdl.a)
+
+if(${IDF_TARGET} STREQUAL "esp32")
+    set(links   "-L ${CMAKE_CURRENT_SOURCE_DIR}/../components/esp-dl/lib/esp32")
+endif()
+
+
+
+target_link_libraries(${COMPONENT_TARGET} ${links})
+target_link_libraries(${COMPONENT_TARGET} ${lib})
+
+# idf_component_register(SRCS "app_extern_server.c" "main.cpp" "app_web_server.cpp" "app_camera.cpp" "main.c"
+#                     INCLUDE_DIRS ".")

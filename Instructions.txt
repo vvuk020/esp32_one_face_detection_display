@@ -1,0 +1,11 @@
+Setting target for esp
+    idf.py set-target esp32
+
+Adding dependancies
+    idf.py add-dependency "espressif/esp32-camera"
+
+    - sdkconfig must be deleted so that the sdkconfig.default is uplodaded
+    - in sdkconfig.default the psram must be enabled
+
+Deep Learning
+    - camera frame must be FRAMESIZE_QVGA 
