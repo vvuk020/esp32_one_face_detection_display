@@ -1,4 +1,3 @@
-
 # ESP32 Deep Learning Face Recognition mit Transparentem Display
 
 Dieses Repository zeigt ein Beispiel für die Nutzung der ESP32 One kit ( mit der built in Kamera) in Kombination mit einem Deep Learning Modul zur Gesichtserkennung. Das erkannte Gesicht wird auf einem transparenten Display angezeigt, wobei die Position (zur Anzeige zugeordnet) des Gesichts mit einem markierten Kreis auf dem Display abgebildet wird. Für Debugging es gibt die Möglichkeit ein Webserver (pyserver.py) auf einem Python Server laufen zu lassen, um die Debugging Funktionalitäten zu ermöglichen.
@@ -35,6 +34,18 @@ Dieses Repository zeigt ein Beispiel für die Nutzung der ESP32 One kit ( mit de
    ```bash
    idf.py flash monitor
    ```
+
+### OLED Verbingung 
+
+Die Pins sind wie folgt verbunden:
+
+| *(ESP32)*        | *(OLED)*           |
+|------------------|--------------------|
+| PIN_CLK          | GPIO_NUM_21        |
+| PIN_MOSI         | GPIO_NUM_22        |
+| PIN_CS           | GPIO_NUM_26        |
+| PIN_DC           | GPIO_NUM_0         |
+| PIN_RESET        | GPIO_NUM_2         |
 
 ## Anwendung
 

@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "face_detect_custom_t3",
-    "project_version":    "1",
+    "project_version":    "86176c7-dirty",
     "project_path":       "/home/vvuk/Workspace/EspPojects/face_detect_custom_t3",
     "idf_path":           "/home/vvuk/esp/esp-idf",
     "build_dir":          "/home/vvuk/Workspace/EspPojects/face_detect_custom_t3/build",

@@ -5,6 +5,7 @@
     "idf.flashType": "UART",
     "idf.port": "/dev/ttyUSB0",
     "files.associations": {
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "u8g2.h": "c"
     }
 }
