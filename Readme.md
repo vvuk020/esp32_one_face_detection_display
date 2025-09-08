@@ -41,11 +41,13 @@ Die Pins sind wie folgt verbunden:
 
 | *(ESP32)*        | *(OLED)*           |
 |------------------|--------------------|
-| PIN_CLK          | GPIO_NUM_21        |
-| PIN_MOSI         | GPIO_NUM_22        |
-| PIN_CS           | GPIO_NUM_26        |
-| PIN_DC           | GPIO_NUM_0         |
-| PIN_RESET        | GPIO_NUM_2         |
+| VCC              | 3V3                |
+| GND              | GND                |
+| CLK              | GPIO_NUM_21        |
+| DIN (MOSI)       | GPIO_NUM_22        |
+| CS               | GPIO_NUM_26        |
+| DC               | GPIO_NUM_0         |
+| RESET            | GPIO_NUM_2         |
 
 ## Anwendung
 
