@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 0999fba40a78a88cb43d759f8c2d92442b41f66b vuk.vujosevic <vuk.vujosevic@th-koeln.de> 1757078620 +0200	commit (initial): init
-0999fba40a78a88cb43d759f8c2d92442b41f66b 0999fba40a78a88cb43d759f8c2d92442b41f66b vuk.vujosevic <vuk.vujosevic@th-koeln.de> 1757078626 +0200	Branch: renamed refs/heads/master to refs/heads/main
-0999fba40a78a88cb43d759f8c2d92442b41f66b a0f45e1b7f82caf8845aeab5bb50dcf28dfdd521 vuk.vujosevic <vuk.vujosevic@th-koeln.de> 1757078839 +0200	commit: Initial commit
-a0f45e1b7f82caf8845aeab5bb50dcf28dfdd521 fcb88df25550eb18d91a7cf88091f77afdf73237 vuk.vujosevic <vuk.vujosevic@th-koeln.de> 1757079513 +0200	commit: Removed build
-fcb88df25550eb18d91a7cf88091f77afdf73237 86176c71f01725a09ebebe4b41b3bd465bdeb017 vuk.vujosevic <vuk.vujosevic@th-koeln.de> 1757080962 +0200	commit: Added components
