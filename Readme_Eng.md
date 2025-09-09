@@ -1,10 +1,11 @@
-Sure! Here's the translated README in English:
-
----
 
 # ESP32 Deep Learning Face Recognition with Transparent Display
 
-This repository demonstrates how to use the ESP32 One kit (with the built-in camera) in combination with a Deep Learning module for face recognition. The recognized face is displayed on a transparent display, with the position of the face (relative to the display) shown as a marked circle on the screen. For debugging purposes, there is an option to run a web server (pyserver.py) on a Python server to enable debugging functionalities.
+This repository demonstrates how to use the ESP32 One kit (with the built in camera) in combination with a Deep Learning module for face recognition. The recognized face is displayed on a transparent display, with the position of the face (relative to the display) shown as a marked circle on the screen. For debugging purposes, there is an option to run a web server (pyserver.py) on a Python server to enable debugging functionalities.
+
+Display is transparent display [1.51inch Transparent OLED](https://www.waveshare.com/wiki/1.51inch_Transparent_OLED) and the driver used is [SSD1309](https://files.waveshare.com/upload/9/9c/SSD1309Datasheet.pdf).
+
+In this project, the ESP32 communicates with the display driver via SPI. I²C is not supported because the display library relies on deprecated I²C drivers that are incompatible with ESP-IDF v6.0.
 
 ## Requirements
 
@@ -12,7 +13,7 @@ This repository demonstrates how to use the ESP32 One kit (with the built-in cam
 * [ESP-DL](https://github.com/espressif/esp-dl/tree/idfv5.3) - DL Library for ESP32, Version idfv5.3
 * [U8G2](https://github.com/olikraus/u8g2/tree/master) - For OLED Display
 * [HAL for ESP32 for Display](https://github.com/mkfrey/u8g2-hal-esp-idf/tree/master) - Based on [u8g2-hal-esp-idf](https://github.com/mkfrey/u8g2-hal-esp-idf/tree/master) by mkfrey, but **modified** as the original didn't work as expected
-* [ESP32-Camera (Version 2.1.0)](https://github.com/espressif/esp32-camera) - Camera is added using *idf.yy add-dependency*
+* [ESP32-Camera (Version 2.1.0)](https://github.com/espressif/esp32-camera) - Camera is added using *idf.py add-dependency*
 
 ## Installation
 

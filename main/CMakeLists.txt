@@ -15,10 +15,9 @@ set(include_dirs    .
                     
                     )
 
-set(requires        esp_wifi esp_event esp_netif esp_http_server esp_http_client nvs_flash esp_psram esp-dl esp_timer u8g2 u8g2-hal-esp-idf)  # driver
+set(requires        esp_wifi esp_event esp_netif esp_http_server esp_http_client nvs_flash esp_psram esp-dl esp_timer u8g2 u8g2-hal-esp-idf)
 
-idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs} REQUIRES ${requires}) #  SRC_DIRS ${src_dirs} 
-
+idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs} REQUIRES ${requires})
 
 
 
@@ -29,10 +28,5 @@ if(${IDF_TARGET} STREQUAL "esp32")
     set(links   "-L ${CMAKE_CURRENT_SOURCE_DIR}/../components/esp-dl/lib/esp32")
 endif()
 
-
-
 target_link_libraries(${COMPONENT_TARGET} ${links})
 target_link_libraries(${COMPONENT_TARGET} ${lib})
-
-# idf_component_register(SRCS "app_module.cpp" "app_extern_server.c" "main.cpp" "app_web_server.cpp" "app_camera.cpp" "main.c"
-#                     INCLUDE_DIRS ".")
